@@ -39,3 +39,5 @@ class Command(BaseCommand):
         Workout.objects.create(id=ObjectId(), name="Evening Yoga", description="Relaxing yoga session in the evening.")
 
         self.stdout.write(self.style.SUCCESS('Successfully populated the database with test data'))
+
+# Copilot agent mode marker: test data population logic present

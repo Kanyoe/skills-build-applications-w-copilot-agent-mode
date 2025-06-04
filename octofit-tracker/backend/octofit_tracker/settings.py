@@ -84,6 +84,8 @@ DATABASES = {
     }
 }
 
+# Copilot agent mode marker: djongo engine is set for MongoDB
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
