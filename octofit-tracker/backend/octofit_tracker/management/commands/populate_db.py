@@ -1,3 +1,6 @@
+# Copilot agent mode: Explicit test data population for OctoFit Tracker
+# This file is managed by Copilot agent mode. It creates test data for all models.
+
 print("Debug: Starting populate_db.py execution")
 
 # Remove all ObjectId imports for now to test if Django import resolves
