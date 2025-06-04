@@ -1,12 +1,13 @@
 print("Debug: Starting populate_db.py execution")
+
+# Remove all ObjectId imports for now to test if Django import resolves
 try:
-    from bson import ObjectId
-    print("Debug: bson module imported successfully")
     from django.core.management.base import BaseCommand
-    print("Debug: django.core.management.base imported successfully")
 except ImportError as e:
-    print(f"Debug: ImportError - {e}")
+    print('Django import error:', e)
     raise
+
+from bson import ObjectId
 
 from octofit_tracker.models import User, Team, Activity, Leaderboard, Workout
 
