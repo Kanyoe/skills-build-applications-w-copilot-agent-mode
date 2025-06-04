@@ -1,6 +1,18 @@
-from django.core.management.base import BaseCommand
+print("Debug: Starting populate_db.py execution")
+try:
+    from bson import ObjectId
+    print("Debug: bson module imported successfully")
+    from django.core.management.base import BaseCommand
+    print("Debug: django.core.management.base imported successfully")
+except ImportError as e:
+    print(f"Debug: ImportError - {e}")
+    raise
+
 from octofit_tracker.models import User, Team, Activity, Leaderboard, Workout
-from bson import ObjectId
+
+print("Debug: Python module search path:")
+import sys
+print(sys.path)
 
 class Command(BaseCommand):
     help = 'Populate the octofit_db database with test data'
