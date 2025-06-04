@@ -1,0 +1,48 @@
+body {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.navbar {
+  background-color: #007bff;
+}
+
+.navbar-brand {
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.table {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.table td {
+  color: #343a40;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+h1 {
+  color: #007bff;
+}
+
+a {
+  color: #007bff;
+}
+
+.logo {
+  float: left;
+  margin-right: 10px;
+}
